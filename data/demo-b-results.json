@@ -1,0 +1,628 @@
+{
+ "model": "answerdotai/ModernBERT-base",
+ "params": 149014272,
+ "torch_threads": 2,
+ "device": "cpu",
+ "vm": "2-core AMD EPYC, 7.7GB RAM",
+ "method": "frozen ModernBERT-base encoder, mean pooling, L2-normalized nearest centroid; 18 hand-labeled exemplars (6/class); batch size 1",
+ "model_load_s": 1.2,
+ "n_exemplars_labeled": 18,
+ "n_test": 100,
+ "per_sample_latency_s": {
+  "p50": 0.1693,
+  "mean": 0.1977,
+  "min": 0.1136,
+  "max": 0.6397
+ },
+ "throughput_per_s": 5.06,
+ "agreement_with_jev_team": {
+  "agree": 66,
+  "n": 100,
+  "rate": 0.66,
+  "note": "agreement with Jev's choice, NOT accuracy vs ground truth"
+ },
+ "generalization_note": "exemplars drawn from 18 templates; test events span all 41 templates incl. held-out phrasing",
+ "ran_at_utc": "2026-09-19T08:44:10Z",
+ "predictions": [
+  {
+   "event_id": "evt-0012",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0029",
+   "pred": "software",
+   "jev_team": "software",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0085",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0080",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0182",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0211",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0000",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0255",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0264",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0037",
+   "pred": "maintenance",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0005",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0094",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0254",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0299",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0073",
+   "pred": "ops",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0105",
+   "pred": "software",
+   "jev_team": "software",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0233",
+   "pred": "ops",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0246",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0282",
+   "pred": "ops",
+   "jev_team": "maintenance",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0252",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0062",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0070",
+   "pred": "software",
+   "jev_team": "software",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0054",
+   "pred": "maintenance",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0195",
+   "pred": "ops",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0192",
+   "pred": "ops",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0023",
+   "pred": "software",
+   "jev_team": "software",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0188",
+   "pred": "ops",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0068",
+   "pred": "software",
+   "jev_team": "software",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0210",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0026",
+   "pred": "software",
+   "jev_team": "software",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0048",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0184",
+   "pred": "ops",
+   "jev_team": "maintenance",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0262",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0087",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0046",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0249",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0205",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0213",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0009",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0168",
+   "pred": "ops",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0221",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0290",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0134",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0227",
+   "pred": "ops",
+   "jev_team": "maintenance",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0041",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0215",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0242",
+   "pred": "maintenance",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0151",
+   "pred": "ops",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0117",
+   "pred": "maintenance",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0010",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0174",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0018",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0143",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0181",
+   "pred": "ops",
+   "jev_team": "maintenance",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0222",
+   "pred": "ops",
+   "jev_team": "maintenance",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0296",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0160",
+   "pred": "maintenance",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0051",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0007",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0028",
+   "pred": "ops",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0244",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0277",
+   "pred": "ops",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0259",
+   "pred": "maintenance",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0034",
+   "pred": "software",
+   "jev_team": "software",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0218",
+   "pred": "maintenance",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0154",
+   "pred": "ops",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0201",
+   "pred": "maintenance",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0058",
+   "pred": "ops",
+   "jev_team": "maintenance",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0139",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0219",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0236",
+   "pred": "ops",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0126",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0232",
+   "pred": "software",
+   "jev_team": "software",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0265",
+   "pred": "ops",
+   "jev_team": "maintenance",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0086",
+   "pred": "ops",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0179",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0104",
+   "pred": "ops",
+   "jev_team": "maintenance",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0066",
+   "pred": "ops",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0216",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0052",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0173",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0133",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0235",
+   "pred": "ops",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0149",
+   "pred": "software",
+   "jev_team": "software",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0214",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0033",
+   "pred": "software",
+   "jev_team": "software",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0047",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0108",
+   "pred": "software",
+   "jev_team": "software",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0008",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0185",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0036",
+   "pred": "ops",
+   "jev_team": "maintenance",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0258",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0289",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0031",
+   "pred": "ops",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0229",
+   "pred": "ops",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0091",
+   "pred": "ops",
+   "jev_team": "ops",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0078",
+   "pred": "maintenance",
+   "jev_team": "software",
+   "agree": false
+  },
+  {
+   "event_id": "evt-0059",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0067",
+   "pred": "software",
+   "jev_team": "software",
+   "agree": true
+  },
+  {
+   "event_id": "evt-0098",
+   "pred": "maintenance",
+   "jev_team": "maintenance",
+   "agree": true
+  }
+ ]
+}
