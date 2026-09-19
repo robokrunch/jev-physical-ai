@@ -79,18 +79,23 @@ GPT-4o-mini is *estimated* ($0.15/M input, $0.60/M output, 600 input + 60 output
 
 ## Reproduce
 
-Demo scripts are being packaged (runs executed 2026-09-19; code landing here next). Planned layout:
+Demo scripts are all in this repo (runs executed 2026-09-19). Layout:
 
 ```
-demo-a-fleet-triage/
-├── run_triage.py        # 300 real decisions via OpenRouter
-├── events_300.jsonl     # 300 sampled bilingual incidents
-└── results_300.jsonl    # raw responses: latency, tokens, cost per call
-demo-b-modernbert/
-├── run_modernbert.py    # frozen encoder + centroid classifier
-└── exemplars.json       # 18 hand-written exemplars
-assets/
+code/              demo scripts (runnable)
+├── demo-a.py      # 300 real decisions via OpenRouter (typesafe/jev-1.13)
+├── demo-b.py      # ModernBERT self-hosted comparison (CPU-only)
+├── charts.py      # regenerates the comparison charts
+├── crossover.py   # Jev-vs-self-host cost table + crossover analysis
+└── render_video.py# renders the 60-second demo video
+data/              measured results (aggregate + per-call records)
+├── demo-a-results.json
+└── demo-b-results.json
+assets/            charts + the 60-second demo video
+├── chart-fleet-cost.png
+├── chart-latency.png
 └── fleet-triage-demo.mp4
+REPRODUCE.md       # full reproduction guide + stated limitations
 ```
 
 To re-run Demo A you need an OpenRouter API key in `OPENROUTER_API_KEY` — never commit keys. Model weights for Demo B download from HuggingFace (~599MB); if your environment sets a proxy, override `NO_PROXY=localhost,127.0.0.1` — bare IPv6 entries in `NO_PROXY` crash newer httpx with `InvalidURL`.
@@ -119,7 +124,7 @@ Stated up front, because fake demos are poison:
 
 ## License
 
-Code: [MIT](LICENSE). Benchmark data (`*.jsonl`): CC-BY 4.0 — use it, cite RoboKrunch.
+Code: [MIT](LICENSE). Benchmark data (`data/*.json`): CC-BY 4.0 — use it, cite RoboKrunch.
 
 ---
 
