@@ -102,7 +102,7 @@ To re-run Demo A you need an OpenRouter API key in `OPENROUTER_API_KEY` — neve
 
 ## Video
 
-<video src="https://raw.githubusercontent.com/robokrunch/jev-physical-ai/main/assets/fleet-triage-demo.mp4" controls width="100%"></video>
+![fleet-triage-demo](https://github.com/robokrunch/jev-physical-ai/raw/main/assets/fleet-triage-demo.mp4)
 
 60 seconds: 300 real decisions streaming past with a live cost ticker, then the fleet-scale math. Watch the ticker — the entire 300-decision run cost less than a cent.
 
